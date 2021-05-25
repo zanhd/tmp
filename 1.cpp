@@ -38,6 +38,8 @@ vector<int> findSongs(int rideduration, vector<int> songDuration)
 		ans[1] = songs[j].id;
 		break;
 	}
-
+	
+	sort(ans.begin(),ans.end()); //extra line
+		
 	return ans;
 }
