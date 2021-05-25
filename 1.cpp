@@ -25,7 +25,7 @@ vector<int> findSongs(int rideduration, vector<int> songDuration)
 	for(int i = 0; i < songDuration.size(); i++)
 	{
 		songs[i].id = i;
-		songs[i].dur = songDuration[i]l
+		songs[i].dur = songDuration[i];
 	}
 
 	sort(songs.begin(),songs.end(),[](Song a,Song b) { return a.dur < b.dur; });
