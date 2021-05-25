@@ -32,7 +32,7 @@ vector<int> findSongs(int rideduration, vector<int> songDuration)
 	for (int i = 0; i < songDuration.size() - 1; i++)
 	{
 		int need = rideduration - 30 - songs[i].dur;
-		int j = BinarySearch(need, songs, i + 1, songDuration.size());
+		int j = BinarySearch(need, songs, i + 1, songDuration.size() - 1);
 		if (j == -1) continue;
 		ans[0] = songs[i].id;
 		ans[1] = songs[j].id;
